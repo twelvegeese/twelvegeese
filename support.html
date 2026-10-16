@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twelve Geese</title>
+<meta name="description" content="Twelve Geese — сезонные рецепты и личная книга рецептов для iPhone.">
+<meta property="og:title" content="Twelve Geese">
+<meta property="og:image" content="img/geese.png">
+<link rel="icon" href="img/goose-icon.png">
+<link rel="apple-touch-icon" href="img/goose-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="i18n.js"></script>
+</head>
+<body>
+<span hidden data-title="sp_title"></span>
+<div class="wrap">
+<header>
+  <a class="logo" href="index.html"><img src="img/goose-icon.png" alt="">Twelve Geese</a>
+  <div class="langs" role="group" aria-label="Language">
+    <button data-lang="ru">RU</button><button data-lang="en">EN</button><button data-lang="be">BE</button><button data-lang="pl">PL</button>
+  </div>
+</header>
+<main class="page">
+<h1 data-i18n="sp_title"></h1>
+<p data-i18n="sp_lead"></p>
+<p><a class="store" data-mailto href="#" data-i18n="sp_btn"></a></p>
+<h2 data-i18n="sp_faq"></h2>
+<details><summary data-i18n="q1"></summary><p data-i18n="a1"></p></details>
+<details><summary data-i18n="q2"></summary><p data-i18n="a2"></p></details>
+<details><summary data-i18n="q3"></summary><p data-i18n="a3"></p></details>
+<details><summary data-i18n="q4"></summary><p data-i18n="a4"></p></details>
+</main>
+<footer>
+  <nav><a href="index.html" data-i18n="nav_home">Главная</a><a href="privacy.html" data-i18n="nav_privacy">Конфиденциальность</a><a href="support.html" data-i18n="nav_support">Поддержка</a></nav>
+  © 2026 Twelve Geese · <span data-i18n="langs"></span>
+</footer>
+</div>
+</body>
+</html>
