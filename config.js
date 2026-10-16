@@ -3,7 +3,7 @@
 
 window.LS_CONFIG = {
   // Почта поддержки — показывается на сайте и в политике конфиденциальности
-  email: "support@example.com",
+  email: "twelvegeese@gmail.com",
 
   // Ссылка на приложение в App Store. Пока пусто — на сайте будет «Скоро в App Store».
   // Когда появится, вставь сюда, например: "https://apps.apple.com/app/id1234567890"
