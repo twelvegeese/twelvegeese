@@ -8,7 +8,7 @@ const T = {
     f1_t: "Рецепты по месяцам", f1_d: "Каждый месяц — новая коллекция блюд из того, что сейчас в сезоне.",
     f2_t: "Ваша книга рецептов", f2_d: "Сохраняйте свои рецепты с фото и шагами, отмечайте любимые.",
     f3_t: "Список покупок", f3_d: "Продукты из рецептов сами собираются в список и раскладываются по разделам.",
-    langs: "Русский · English · Беларуская · Polski",
+    langs: "English · Polski · Беларуская · Русский",
 
     pp_title: "Политика конфиденциальности", updated: "Обновлено: 16 октября 2026",
     pp_intro: "Twelve Geese — приложение с сезонными рецептами. Мы бережно относимся к вашим данным и собираем как можно меньше.",
@@ -37,7 +37,7 @@ const T = {
     f1_t: "Recipes by month", f1_d: "Every month brings a new collection of dishes made from what’s in season right now.",
     f2_t: "Your recipe book", f2_d: "Save your own recipes with photos and steps, and mark your favourites.",
     f3_t: "Shopping list", f3_d: "Ingredients from recipes gather into one list, sorted by aisle.",
-    langs: "Русский · English · Беларуская · Polski",
+    langs: "English · Polski · Беларуская · Русский",
 
     pp_title: "Privacy Policy", updated: "Last updated: 16 October 2026",
     pp_intro: "Twelve Geese is a seasonal recipe app. We care about your data and collect as little as possible.",
@@ -66,7 +66,7 @@ const T = {
     f1_t: "Рэцэпты па месяцах", f1_d: "Кожны месяц — новая калекцыя страў з таго, што цяпер у сезоне.",
     f2_t: "Ваша кніга рэцэптаў", f2_d: "Захоўвайце свае рэцэпты з фота і крокамі, адзначайце любімыя.",
     f3_t: "Спіс пакупак", f3_d: "Прадукты з рэцэптаў самі збіраюцца ў спіс і раскладваюцца па раздзелах.",
-    langs: "Русский · English · Беларуская · Polski",
+    langs: "English · Polski · Беларуская · Русский",
 
     pp_title: "Палітыка канфідэнцыяльнасці", updated: "Абноўлена: 16 кастрычніка 2026",
     pp_intro: "Twelve Geese — праграма з сезоннымі рэцэптамі. Мы беражліва ставімся да вашых даных і збіраем як мага менш.",
@@ -95,7 +95,7 @@ const T = {
     f1_t: "Przepisy na każdy miesiąc", f1_d: "Co miesiąc nowa kolekcja dań z tego, co właśnie jest w sezonie.",
     f2_t: "Twoja książka przepisów", f2_d: "Zapisuj własne przepisy ze zdjęciami i krokami, oznaczaj ulubione.",
     f3_t: "Lista zakupów", f3_d: "Składniki z przepisów same trafiają na listę i układają się według działów.",
-    langs: "Русский · English · Беларуская · Polski",
+    langs: "English · Polski · Беларуская · Русский",
 
     pp_title: "Polityka prywatności", updated: "Ostatnia aktualizacja: 16 października 2026",
     pp_intro: "Twelve Geese to aplikacja z sezonowymi przepisami. Dbamy o Twoje dane i zbieramy ich jak najmniej.",
