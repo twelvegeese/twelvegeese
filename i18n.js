@@ -51,7 +51,7 @@ const T = {
   "nav_terms": "Условия использования (Apple Standard EULA)",
   "nav_saving": "Сохранение рецептов и авторские права",
   "pp_hm": "Если вы нам пишете",
-  "pp_pm": "Когда вы пишете на {email}, мы получаем ваш адрес и письмо и используем их только для ответа.",
+  "pp_pm": "Когда вы пишете на {email}, мы получаем ваш адрес и письмо и используем их только для ответа.<br>Ответственная за обработку данных: Katsiaryna Trapachka, разработчик Twelve Geese · Email: {email}",
   "pp_hs": "Этот сайт",
   "pp_ps": "Сайт twelvegeese.com — простой статический сайт на GitHub Pages. Когда вы его открываете, GitHub обрабатывает технические данные, например IP-адрес, чтобы показать страницы и защитить сервис, — по своему <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">заявлению о конфиденциальности</a>. Сайт ничего не загружает с других сервисов: шрифты и картинки хранятся на самом сайте. На нём нет cookie, аналитики и рекламы. Выбранный язык запоминается только в вашем браузере.",
   "rs_title": "Сохранение рецептов и авторские права",
@@ -120,7 +120,7 @@ const T = {
   "nav_terms": "Terms of Use (Apple Standard EULA)",
   "nav_saving": "Recipe Saving & Copyright",
   "pp_hm": "If you write to us",
-  "pp_pm": "When you email {email}, we receive your address and your message. We use them only to answer you.",
+  "pp_pm": "When you email {email}, we receive your address and your message. We use them only to answer you.<br>Data controller: Katsiaryna Trapachka, developer of Twelve Geese · Email: {email}",
   "pp_hs": "This website",
   "pp_ps": "twelvegeese.com is a simple static site hosted on GitHub Pages. When you open it, GitHub processes technical data such as your IP address to deliver the pages and keep the service secure, under its own <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">privacy statement</a>. The site loads nothing from other services — fonts and pictures are stored on the site itself — and has no cookies, analytics or ads. The language you choose is remembered only in your browser.",
   "rs_title": "Recipe Saving & Copyright",
@@ -189,7 +189,7 @@ const T = {
   "nav_terms": "Умовы выкарыстання (Apple Standard EULA)",
   "nav_saving": "Захаванне рэцэптаў і аўтарскія правы",
   "pp_hm": "Калі вы нам пішаце",
-  "pp_pm": "Калі вы пішаце на {email}, мы атрымліваем ваш адрас і ліст і выкарыстоўваем іх толькі для адказу.",
+  "pp_pm": "Калі вы пішаце на {email}, мы атрымліваем ваш адрас і ліст і выкарыстоўваем іх толькі для адказу.<br>Адказная за апрацоўку даных: Katsiaryna Trapachka, распрацоўшчык Twelve Geese · Email: {email}",
   "pp_hs": "Гэты сайт",
   "pp_ps": "Сайт twelvegeese.com — просты статычны сайт на GitHub Pages. Калі вы яго адкрываеце, GitHub апрацоўвае тэхнічныя даныя, напрыклад IP-адрас, каб паказаць старонкі і абараніць сэрвіс, — паводле сваёй <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">заявы аб канфідэнцыяльнасці</a>. Сайт нічога не загружае з іншых сэрвісаў: шрыфты і выявы захоўваюцца на самім сайце. На ім няма cookie, аналітыкі і рэкламы. Выбраная мова запамінаецца толькі ў вашым браўзеры.",
   "rs_title": "Захаванне рэцэптаў і аўтарскія правы",
@@ -258,7 +258,7 @@ const T = {
   "nav_terms": "Warunki korzystania (Apple Standard EULA)",
   "nav_saving": "Zapisywanie przepisów i prawa autorskie",
   "pp_hm": "Jeśli do nas piszesz",
-  "pp_pm": "Gdy piszesz na {email}, otrzymujemy Twój adres i wiadomość i używamy ich tylko do odpowiedzi.",
+  "pp_pm": "Gdy piszesz na {email}, otrzymujemy Twój adres i wiadomość i używamy ich tylko do odpowiedzi.<br>Administrator danych: Katsiaryna Trapachka, twórczyni aplikacji Twelve Geese · E-mail: {email}",
   "pp_hs": "Ta strona",
   "pp_ps": "Strona twelvegeese.com to prosta statyczna strona na GitHub Pages. Gdy ją otwierasz, GitHub przetwarza dane techniczne, np. adres IP, aby wyświetlić strony i chronić usługę — zgodnie z własnym <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">oświadczeniem o prywatności</a>. Strona niczego nie pobiera z innych serwisów: czcionki i obrazy są przechowywane na samej stronie. Nie ma na niej plików cookie, analityki ani reklam. Wybrany język jest zapamiętywany tylko w Twojej przeglądarce.",
   "rs_title": "Zapisywanie przepisów i prawa autorskie",
@@ -300,6 +300,13 @@ const T = {
     const t = document.querySelector("[data-title]");
     if (t) document.title = d[t.dataset.title] + " — Twelve Geese";
     document.querySelectorAll("[data-mailto]").forEach(a => a.href = "mailto:" + cfg.email);
+    document.querySelectorAll("img[data-shot]").forEach(img => {
+      const want = "img/shots/" + lang + "/" + img.dataset.shot + ".jpg";
+      if (img.dataset.want === want) return;
+      img.dataset.want = want;
+      img.onerror = () => { img.onerror = null; img.src = img.dataset.fallback; };
+      img.src = want;
+    });
     document.querySelectorAll("img[data-shot]").forEach(img => {
       const want = "img/shots/" + lang + "/" + img.dataset.shot + ".jpg";
       if (img.dataset.want === want) return;
